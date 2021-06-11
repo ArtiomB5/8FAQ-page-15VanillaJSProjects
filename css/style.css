@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+.container .header {
+  height: 150px;
+  border: 1px solid red;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.container .header .header__button {
+  text-transform: uppercase;
+  width: 80px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 1px solid red;
+  font-weight: 700;
+}
+.container .header .header__button:hover {
+  background-color: red;
+}
+.container .main {
+  min-height: calc(100% - 100px);
+}
+.container .main .main__device {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  height: 220px;
+  font-size: 24px;
+}
+.container .main .main__device .main__content {
+  width: 70%;
+  text-align: center;
+}
+.container .main .main__device .main__name {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px;
+}
+.container .main .main__device .main__image {
+  width: 30%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .main .main__device .main__description {
+  padding: 10px;
+}
+.container .main .main__device .main__price {
+  padding: 10px;
+}
+
+.header__title {
+  font-size: 32px;
+  padding: 10px 0 15px 0;
+  text-transform: uppercase;
+}
